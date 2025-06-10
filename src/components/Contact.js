@@ -191,7 +191,7 @@ function Contact() {
                 </Link>
                 <Link
                   className="inline-flex items-center gap-2 rounded-lg border border-indigo-600  bg-[#000000] px-2 py-1  text-white hover:bg-transparent  focus:outline-none focus:ring active:text-indigo-500"
-                  to="mailto:nikhilchikhalkar123@gmail.com"
+                  to="tiwarisuraj76090@gmail.com"
                   target="_blank"
                 >
                   <MdOutlineMarkEmailRead className="w-12 h-12" />
