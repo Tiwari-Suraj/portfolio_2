@@ -21,7 +21,7 @@ function Projects() {
       dec: "Doctor's Appointment Website allows patients to easily book, manage, and track their medical appointments online. It offers doctor profiles, availability, appointment history, and secure communication for a seamless healthcare experience.",
       tools: "HTML5,Tailwind CSS, JavaScript, ReactJs, Redux,Node.js,Express.js, MongoDb ",
       github_code: "https://github.com/Tiwari-Suraj/doctor_appointment_module.git",
-      diploy_link: "https://doctor-appointment-full-stack.vercel.app/",
+      diploy_link: "https://doctor-appointment-fe.netlify.app/",
       image: project2,
     },
     {
