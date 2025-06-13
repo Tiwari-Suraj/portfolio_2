@@ -15,7 +15,7 @@ function About() {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className=" text-center bg-gradient-to-r  from-pink-500 via-red-500 to-yellow-500  bg-clip-text font-extrabold text-transparent sm:text-5xl">
+            className=" text-center bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)]   bg-clip-text font-extrabold text-transparent sm:text-5xl">
             About Us
           </motion.h1>
           <div className="grid mt-3 sm:mt-0 grid-cols-1 lg:h-full lg:grid-cols-2">
@@ -46,7 +46,7 @@ function About() {
               <div className="p-2 sm:p-16 lg:p-16 lg:pb-60">
                 <h2 className="text-2xl font-bold sm:text-2xl">
                   I have a good knowledge  And I have created some projects
-                  using this HTML5, CSS3, Tailwind CSS, Bootstrap, Material Ui, Javascript, React Js, Redux, Node Js, Express.Js, MongoDb
+                  using <span className="bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] text-transparent bg-clip-text"> HTML5, CSS3, Tailwind CSS, Bootstrap, Material Ui, Javascript, React Js, Redux, Node Js, Express.Js, MongoDb</span>
                 </h2>
                 <p className="mt-2 text-gray-300">
                   I am passionate about solving real-world problems in the field

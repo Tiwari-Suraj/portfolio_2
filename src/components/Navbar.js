@@ -12,9 +12,9 @@ function Navbar() {
           {/* logo */}
           <div className="flex gap-2 text-4xl cursor-pointer items-center">
             <span className="font-bold" >
-              Su
-              <span className=" bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">
-                raj
+
+              <span className="bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] text-transparent bg-clip-text">
+                Suraj
               </span>
             </span>
           </div>
@@ -38,7 +38,7 @@ function Navbar() {
             md:static md:w-auto  transition-all duration-500 ease-in ${isopen ? "top-12" : "top-[-490px]"
               }`}
           >
-            <li className="my-7 md:my-0 md:ml-8 font-bold bg-white hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">
+            <li className="my-7 md:my-0 md:ml-8 font-bold bg-white hover:bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] text-transparent bg-clip-text">
               {" "}
               <Link
                 to="home"
@@ -52,7 +52,7 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li className="my-7 md:my-0 md:ml-8 font-bold bg-white hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">
+            <li className="my-7 md:my-0 md:ml-8 font-bold bg-white hover:bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] text-transparent bg-clip-text">
               {" "}
               <Link
                 to="about"
@@ -66,7 +66,7 @@ function Navbar() {
                 About
               </Link>
             </li>
-            <li className="my-7 md:my-0 md:ml-8 font-bold  bg-white hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">
+            <li className="my-7 md:my-0 md:ml-8 font-bold  bg-white hover:bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] text-transparent bg-clip-text">
               {" "}
               <Link
                 to="skills"
@@ -80,7 +80,7 @@ function Navbar() {
                 Skills
               </Link>
             </li>
-            <li className="my-7 md:my-0 md:ml-8 font-bold  bg-white hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">
+            <li className="my-7 md:my-0 md:ml-8 font-bold  bg-white hover:bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] text-transparent bg-clip-text">
               {" "}
               <Link
                 to="tools"
@@ -108,7 +108,7 @@ function Navbar() {
                 Projects
               </Link>
             </li>
-            <li className="my-7 md:my-0 md:ml-8 font-bold  bg-white hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">
+            <li className="my-7 md:my-0 md:ml-8 font-bold  bg-white hover:bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] text-transparent bg-clip-text">
               {" "}
               <Link
                 to="contact"
@@ -124,7 +124,7 @@ function Navbar() {
             </li>
             <li className="my-7 md:my-0 md:ml-8 font-bold ">
               <NavLink
-                className="group inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
+                className="group inline-block rounded-full bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
                 to="https://drive.google.com/file/d/1MPRdBWYoBLq6BrJix3X86KIJiK5_BJ6O/view?usp=sharing"
                 target="_blank"
               >

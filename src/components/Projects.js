@@ -41,7 +41,7 @@ function Projects() {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className=" text-center bg-gradient-to-r  from-pink-500 via-red-500 to-yellow-500  bg-clip-text font-extrabold text-transparent sm:text-5xl">
+          className=" text-center bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)]  bg-clip-text font-extrabold text-transparent sm:text-5xl">
           Projects
         </motion.h1>
       </div>
@@ -64,7 +64,7 @@ function Projects() {
             <div className="mt-2">
               <dl>
                 <div>
-                  <dt className="text-center mt-10 text-2xl font-bold  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">
+                  <dt className="text-center mt-10 text-2xl font-bold  bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] text-transparent bg-clip-text">
                     {item.title}
                   </dt>
                 </div>
@@ -89,7 +89,7 @@ function Projects() {
                     <FaGithub className="w-4 h-4" />
                   </Link>
                   <Link to={item.diploy_link} target="_blank">
-                    <FaArrowUpRightFromSquare className="w-4 h-4" />
+                    <FaArrowUpRightFromSquare className="w-4 h-4 " />
                   </Link>
                 </div>
                 {/* </div> */}

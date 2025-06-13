@@ -43,7 +43,7 @@ function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
 
-            className=" text-center bg-gradient-to-r  from-pink-500 via-red-500 to-yellow-500  bg-clip-text font-extrabold text-transparent sm:text-5xl">
+            className=" text-center bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)]  bg-clip-text font-extrabold text-transparent sm:text-5xl">
             Contact Me
           </motion.h1>
           <motion.div
@@ -252,15 +252,15 @@ function Contact() {
                 <div className="my-6 text-left">
 
                   <textarea
-                    className="w-full border border-gray-300 rounded-lg bg-[#213469] py-3 px-4 mt-4 h-48 resize-non"
+                    className="w-full  border border-gray-300 rounded-lg bg-[#213469] py-3 px-4 mt-4 h-48 resize-non"
                     type="text"
                     name="Message"
                     placeholder="Message"
                     required
                   />
                 </div>
-                <button className="inline-block w-full rounded-lg  bg-[#213469] border-gray-300	 border-2 hover:bg-sky-700 px-5 py-3 font-medium text-white sm:w-auto">
-                  {result ? result : "Send Message "}
+                <button className=" rounded-lg  group mt-8  inline-block  bg-[linear-gradient(267deg,_#DA7C25_0.36%,_#B923E1_102.06%)] p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75">
+                  <span className="block rounded-lg dark:bg-[#213469] px-8 py-3 text-sm font-medium group-hover:bg-transparent"> {result ? result : "Send Message "} </span>
                 </button>
               </form>
             </div>
