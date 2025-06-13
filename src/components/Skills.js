@@ -81,8 +81,6 @@ function Skills() {
           className="grid grid-cols-2 md:grid-cols-4 pt-4  gap-4 lg:grid-cols-6 bg-gray-900 sm:grid-cols-2 h-full lg:gap-8">
           {skill.map((item, index) => (
             <div
-
-
               key={index}
               className=" h-[11rem] rounded-3xl shadow-lg  bg-[#213469] items-center px-8 py-4 m-auto"
             >
