@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import project1 from "../assets/project_1.jpg";
 import project2 from "../assets/project2.jpg";
 import project3 from "../assets/project_3.jpg";
+import { motion } from "motion/react";
 
 function Projects() {
   const projectList = [
@@ -36,11 +37,19 @@ function Projects() {
   return (
     <div>
       <div className="pb-12">
-        <h1 className=" text-center bg-gradient-to-r  from-pink-500 via-red-500 to-yellow-500  bg-clip-text font-extrabold text-transparent sm:text-5xl">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className=" text-center bg-gradient-to-r  from-pink-500 via-red-500 to-yellow-500  bg-clip-text font-extrabold text-transparent sm:text-5xl">
           Projects
-        </h1>
+        </motion.h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-12 w-[80%] m-auto">
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, delay: 1 }}
+        className="grid grid-cols-1 md:grid-cols-2  gap-12 w-[80%] m-auto">
         {projectList.map((item, index) => (
           <div
             key={index}
@@ -92,7 +101,7 @@ function Projects() {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
 
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
-
+import { motion } from "motion/react";
 
 import { FaWhatsapp } from "react-icons/fa6";
 
@@ -38,10 +38,20 @@ function Contact() {
     <>
       <section className="bg-gray-900">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-          <h1 className=" text-center bg-gradient-to-r  from-pink-500 via-red-500 to-yellow-500  bg-clip-text font-extrabold text-transparent sm:text-5xl">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+
+            className=" text-center bg-gradient-to-r  from-pink-500 via-red-500 to-yellow-500  bg-clip-text font-extrabold text-transparent sm:text-5xl">
             Contact Me
-          </h1>
-          <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+          </motion.h1>
+          <motion.div
+            initial={{ opacity: 0, x: -200 }}
+            transition={{ duration: 1.5 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div className="lg:col-span-2 lg:py-12">
               <img
                 src="https://mohit-portfolio.vercel.app/assets/contact.f495edec.svg"
@@ -254,7 +264,7 @@ function Contact() {
                 </button>
               </form>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

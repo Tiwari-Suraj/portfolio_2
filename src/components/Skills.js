@@ -10,6 +10,7 @@ import expressjs from "../assets/expressjs.webp";
 import mui from "../assets/mui.png";
 import mongodb from "../assets/mongodb.png";
 import tailwindcss from "../assets/tailwindcss.png";
+import { motion, spring } from "motion/react";
 
 function Skills() {
   const skill = [
@@ -65,13 +66,23 @@ function Skills() {
     <>
       <div className="bg-gray-900 w-[80%] h-fit pb-40 m-auto">
         <div>
-          <h1 className=" text-center bg-gradient-to-r  from-pink-500 via-red-500 to-yellow-500  bg-clip-text font-extrabold text-transparent sm:text-5xl">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className=" text-center bg-gradient-to-r  from-pink-500 via-red-500 to-yellow-500  bg-clip-text font-extrabold text-transparent sm:text-5xl">
             Skills
-          </h1>
+          </motion.h1>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 pt-4  gap-4 lg:grid-cols-6 bg-gray-900 sm:grid-cols-2 h-full lg:gap-8">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="grid grid-cols-2 md:grid-cols-4 pt-4  gap-4 lg:grid-cols-6 bg-gray-900 sm:grid-cols-2 h-full lg:gap-8">
           {skill.map((item, index) => (
             <div
+
+
               key={index}
               className=" h-[11rem] rounded-3xl shadow-lg  bg-[#213469] items-center px-8 py-4 m-auto"
             >
@@ -83,7 +94,7 @@ function Skills() {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   );

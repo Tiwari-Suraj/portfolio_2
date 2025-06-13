@@ -4,6 +4,7 @@ import git from "../assets/git.jpg";
 import netlify from "../assets/netlify.png";
 import vercel from "../assets/vercel.png";
 import postman from "../assets/postman.png";
+import { motion } from "motion/react";
 
 function Tools() {
   const skill = [
@@ -33,11 +34,19 @@ function Tools() {
     <>
       <div className="bg-gray-900 w-[80%] h-fit  pb-28 m-auto">
         <div>
-          <h1 className=" text-center bg-gradient-to-r  from-pink-500 via-red-500 to-yellow-500  bg-clip-text font-extrabold text-transparent sm:text-5xl">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            h1 className=" text-center bg-gradient-to-r  from-pink-500 via-red-500 to-yellow-500  bg-clip-text font-extrabold text-transparent sm:text-5xl">
             Tools
-          </h1>
+          </motion.h1>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 pt-4 items-center justify-center text-center gap-4 lg:grid-cols-6 bg-gray-900 sm:grid-cols-2 h-full lg:gap-8">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="grid grid-cols-2 md:grid-cols-4 pt-4 items-center justify-center text-center gap-4 lg:grid-cols-6 bg-gray-900 sm:grid-cols-2 h-full lg:gap-8">
           {skill.map((item, index) => (
             <div
               key={index}
@@ -51,7 +60,7 @@ function Tools() {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   );
